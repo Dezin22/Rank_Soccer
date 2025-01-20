@@ -1,47 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ranking de Futebol</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-</head>
-<body>
-
+  </head>
+  <body>
     <header>
-        <h1>Soocer Ranking</h1>
-        <p>See the ranking of the teams and the values of the squads by state.</p>
+      <h1>Soccer Ranking</h1>
+      <p>See the ranking of the teams and the values of the squads by state.</p>
     </header>
 
     <main>
-        <section class="rank">
-            <h2>Ranking de Times</h2>
-            <div class="rank-column">
-                <ol id="ranking-list-1"></ol> <!-- Primeira coluna -->
-            </div>
-            <div class="rank-column">
-                <ol id="ranking-list-2"></ol> <!-- Segunda coluna -->
-            </div>
-            <div class="rank-column">
-                <ol id="ranking-list-3"></ol> <!-- Terceira coluna -->
-            </div>
-        </section>
-    
-        <section class="chart">
-            <h2>Valor dos Elencos por Estado</h2>
-            <canvas id="teamValueChart"></canvas>
-        </section>
-
-        <div>
-            <p>Fonte: <a href="https://www.lance.com.br/lancebiz/mercado-do-esporte/palmeiras-supera-flamengo-e-tem-elenco-mais-caro-do-brasileirao-veja-ranking.html">lance.com.br</a> </p>
+      <section class="rank">
+        <h2>Ranking of Teams</h2>
+        <div class="rank-column">
+          <ol id="ranking-list-1"></ol>
+          <!-- Primeira coluna -->
         </div>
+        <div class="rank-column">
+          <ol id="ranking-list-2"></ol>
+          <!-- Segunda coluna -->
+        </div>
+        <div class="rank-column">
+          <ol id="ranking-list-3"></ol>
+          <!-- Terceira coluna -->
+        </div>
+      </section>
+
+      <section class="chart">
+        <h2>Cast Values ​​by State</h2>
+        <canvas id="teamValueChart"></canvas>
+      </section>
+
+      <div>
+        <p>
+          Source:
+          <a
+            href="https://www.lance.com.br/lancebiz/mercado-do-esporte/palmeiras-supera-flamengo-e-tem-elenco-mais-caro-do-brasileirao-veja-ranking.html"
+            >lance.com.br</a
+          >
+        </p>
+      </div>
     </main>
 
     <footer>
-        <p>&copy; 2025 Ranking de Futebol</p>
+      <p>&copy; 2025 Ranking of Soccer</p>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
